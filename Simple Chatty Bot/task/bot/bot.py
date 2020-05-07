@@ -31,9 +31,21 @@ def count():
         curr = curr + 1
 
 
+def ans():
+    return ['To repeat  a statement multiple times.',
+            'To decompose a program into several small subroutines.',
+            'To determine the execution time of a program.',
+            'To interrupt the execution of a program.']
+
+
 def test():
     print("Let's test your programming knowledge.")
-    # write your code here
+    print('Why do we use methods?')  # The Question
+    for value, Q in enumerate(ans(), 1):
+        print(str(value) + '. ' + Q)
+    choice = int(input())
+    while choice != 2:
+        choice = int(input('Please, try again.'))
     print('Completed, have a nice day!')
 
 
@@ -45,5 +57,5 @@ greet('Aid', '2020')  # change it as you need
 remind_name()
 guess_age()
 count()
-# ...
+test()
 end()
